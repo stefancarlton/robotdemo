@@ -1,0 +1,9 @@
+<phpunit bootstrap="bootstrap.php">
+    
+    <testsuites>
+        <testsuite name="Test Suite">
+            <directory>./</directory>
+        </testsuite>
+    </testsuites>
+    
+</phpunit>

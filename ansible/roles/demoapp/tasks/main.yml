@@ -1,0 +1,7 @@
+---
+
+### composer ansible extension requires Ansible 1.6 or 1.8+
+- name: configure app
+  shell: composer install
+  args: 
+     chdir: /var/www/demo/ 

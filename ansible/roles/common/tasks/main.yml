@@ -1,0 +1,9 @@
+---
+- name: update cache and upgrade
+  apt: update_cache=yes upgrade=dist
+
+- include: packages.yml
+
+- name: set /etc/timezone
+  template: src=timezone dest=/etc/timezone
+  notify: update tzdata

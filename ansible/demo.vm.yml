@@ -1,0 +1,11 @@
+- name: Install a PHP demo instance
+  hosts: all
+  user: vagrant
+  sudo: yes
+  vars_files:
+    - vars/common.yml
+
+  roles:
+    - common
+    - composer
+    - demoapp

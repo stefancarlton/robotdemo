@@ -1,0 +1,6 @@
+---
+### contains any packages which aren't installed in the base image
+
+- apt: name=curl force=yes
+- apt: name=php5 force=yes
+
